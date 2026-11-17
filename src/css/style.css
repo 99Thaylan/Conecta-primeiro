@@ -1,0 +1,73 @@
+/* Importação do Tailwind CSS v4 (Aulas 9 a 14) */
+@import "tailwindcss";
+
+/* CUSTOMIZAÇÃO DO TEMA COM AS CORES EXATAS DAS IMAGENS (Aula 14) */
+@theme {
+    --color-verde-escuro: #0D5241;
+    --color-verde-medio: #0F7656;
+    --color-verde-claro: #E6F0ED;
+    --color-moldura-a4: #D5DFDC;
+    --color-amarelo-destaque: #ECA135;
+    --color-amarelo-claro: #FEF6E6;
+    --color-amarelo-escuro: #9A5B13;
+    --color-fundo-claro: #F8FAFC;
+    --color-texto-escuro: #111C18;
+    --color-texto-apoio: #5A6B65;
+    --color-borda-suave: #E2E8E5;
+}
+
+
+@layer components {
+
+    .btn-amarelo {
+        @apply bg-amarelo-destaque text-texto-escuro font-bold py-3 px-6 rounded-xl;
+    }
+    .btn-amarelo:hover {
+        @apply bg-yellow-500;
+    }
+
+    /* Botão Transparente com Borda Branca do Banner Principal */
+    .btn-contorno-branco {
+        @apply border-2 border-white text-white font-bold py-3 px-6 rounded-xl;
+    }
+    .btn-contorno-branco:hover {
+        @apply bg-verde-medio;
+    }
+
+    /* Botão Verde Escuro */
+    .btn-verde-escuro {
+        @apply bg-verde-escuro text-white font-bold py-3 px-6 rounded-xl;
+    }
+    .btn-verde-escuro:hover {
+        @apply bg-verde-medio;
+    }
+
+    
+    .card-padrao {
+        @apply bg-white border border-borda-suave rounded-2xl p-6;
+    }
+
+    /* Estilo dos Inputs do Formulário */
+    .campo-input {
+        
+        @apply w-full bg-fundo-claro border border-borda-suave rounded-xl p-3 text-sm text-texto-escuro focus:bg-white;
+    }
+
+    /* Estilo do Input selecionado com borda verde escura*/
+    .campo-input-ativo {
+        @apply w-full bg-white border-2 border-verde-escuro rounded-xl p-3 text-sm text-texto-escuro;
+    }
+}
+
+/* REGRAS DE CSS TRADICIONAL*/
+body {
+    font-family: sans-serif;
+}
+
+fieldset {
+    border: 0;
+}
+
+button, select, a, label {
+    cursor: pointer;
+}

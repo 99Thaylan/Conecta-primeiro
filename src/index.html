@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Primeiro - Início</title>
+    <!-- Vinculando o CSS gerado pelo Tailwind -->
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="bg-white text-texto-escuro">
+
+    <header class="bg-white border-b border-borda-suave p-4">
+
+        <div class="container mx-auto flex flex-row justify-between items-center">
+            
+            <!-- Logo Conecta Primeiro -->
+            <div class="flex flex-row items-center gap-4">
+                <div class="bg-verde-escuro text-white font-bold p-2 px-4 rounded-xl text-xl">
+                    C</div>
+                <div>
+                    <h1 class="font-bold text-xl text-verde-escuro">Conecta Primeiro</h1>
+                    <p class="text-sm text-texto-apoio">Seu primeiro passo no mercado</p>
+                </div>
+            </div>
+
+            <!-- NAVEGAÇÃO-->
+            <nav>
+                <ul class="flex flex-row gap-6 items-center text-sm">
+                    <li><a href="index.html" class="text-texto-escuro hover:text-verde-medio font-bold">Início</a></li>
+                    <li><a href="curriculo.html" class="text-texto-escuro hover:text-verde-medio font-bold">Currículo</a></li>
+                    <li><a href="quiz.html" class="text-texto-escuro hover:text-verde-medio font-bold">Quiz</a></li>
+                    <li><a href="#direitos" class="text-texto-escuro hover:text-verde-medio font-bold">Direitos</a></li>
+                    <li><a href="#sobre" class="text-texto-escuro hover:text-verde-medio font-bold">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BANNER VERDE ESCURO -->
+    <section class="bg-verde-escuro text-white p-10">
+        <div class="container mx-auto my-4">
+            <!-- Etiqueta Laranja -->
+            <span class="inline-block bg-amarelo-destaque text-texto-escuro text-xs font-bold py-2 px-4 rounded-full">
+                100% GRATUITO · PARA JOVENS
+            </span>
+            
+            <h2 class="text-3xl lg:text-5xl font-bold my-4">
+                Sua entrada no mercado de trabalho começa aqui
+            </h2>
+            
+            <p class="text-xl text-verde-claro my-4">
+                Aprenda sobre estágio e aprendizagem e gere seu currículo de forma gratuita.
+            </p>
+            
+            <!-- Botões do Banner -->
+            <div class="flex flex-row gap-4 my-4">
+                <a href="curriculo.html" class="btn-amarelo">Criar Currículo →</a>
+                <a href="quiz.html" class="btn-contorno-branco">Fazer Quiz Legal</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="container mx-auto my-4 p-4">
+
+        <!-- SEÇÃO PAINEL -->
+        <section id="direitos" class="my-4">
+            <!-- Tracking-wider adiciona um leve espaçamento entre as letras maiúsculas do subtítulo -->
+            <h3 class="text-xs font-bold text-texto-apoio tracking-wider my-4">PAINEL DAS FERRAMENTAS DO PORTAL</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-4">
+                
+                <!-- Card 1: Gerador Rápido -->
+                <article class="card-padrao flex flex-row items-start gap-4">
+                    <!-- Explicação: shrink-0 impede que o círculo do ícone encolha no Flexbox (Aula 12) -->
+                    <div class="bg-verde-claro text-verde-escuro font-bold p-4 rounded-full text-center shrink-0">
+                        pdf
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-texto-escuro">Gerador Rápido</h4>
+                        <p class="text-sm text-texto-apoio my-4">Preencha seus dados e gere seu currículo em pdf.</p>
+                        <a href="curriculo.html" class="text-sm text-verde-medio font-bold hover:underline">Acessar →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- RODAPÉ SEMÂNTICO VERDE ESCURO (Conforme a imagem 1) -->
+    <footer class="bg-verde-escuro text-white p-6">
+        <div class="container mx-auto flex flex-row justify-between items-center text-sm">
+            <p><strong>UFFS · Ciência da Computação</strong></p>
+            <p><a href="mailto:atendimento@uffs.edu.br" class="text-verde-claro hover:underline">Canal de Atendimento</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
