@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Primeiro - Gerador de Currículo</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="bg-white text-texto-escuro">
+
+    <header class="bg-white border-b border-borda-suave p-4">
+        <div class="container mx-auto flex flex-row justify-between items-center">
+            <div class="flex flex-row items-center gap-4">
+                <div class="bg-verde-escuro text-white font-bold p-2 px-4 rounded-xl text-xl">
+                    C
+                </div>
+                <div>
+                    <h1 class="font-bold text-xl text-verde-escuro">Conecta Primeiro</h1>
+                    <p class="text-sm text-texto-apoio">Seu primeiro passo para um emprego</p>
+                </div>
+            </div>
+
+            <nav>
+                <a href="index.html" class="bg-white border border-borda-suave text-verde-escuro hover:bg-verde-claro font-bold text-sm py-2 px-4 rounded-lg">
+                    ← Voltar ao Início
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="container mx-auto my-4 p-4">
+
+        <!-- TÍTULO DA PÁGINA -->
+        <section class="my-4">
+            <span class="text-xs font-bold text-texto-escuro tracking-wider">
+                FERRAMENTA GRATUITA
+            </span>
+            <h2 class="text-3xl font-bold text-texto-escuro my-2">Gerador de Primeiro Currículo Profissional</h2>
+            <p class="text-texto-apoio">Preencha os campos e veja seu currículo ganhar forma em tempo real.</p>
+        </section>
+
+        <!-- Grid de 5 colunas: 3 para o formulário e 2 para impressão -->
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 my-4">
+
+            <!-- COLUNA ESQUERDA DE FORMULÁRIO DE ENTRADA -->
+            <section class="lg:col-span-3 card-padrao">
+                <h3 class="text-xs font-bold text-texto-apoio tracking-wider my-2">FORMULÁRIO DE ENTRADA</h3>
+
+                <form>
+                    <!-- Bloco 1: Identificação básica -->
+                    <fieldset class="my-4">
+                        <div class="flex flex-row items-center gap-2 my-2">
+                            <span class="bg-verde-escuro text-white font-bold px-3 py-1 rounded-full text-xs">1</span>
+                            <strong class="text-texto-escuro">Identificação básica</strong>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 my-2">
+                            <div class="md:col-span-2">
+                                <label for="nome" class="block text-xs font-bold text-texto-apoio my-1">Nome completo</label>
+                                <input type="text" id="nome" name="nome" class="campo-input-ativo" required>
+                            </div>
+                            <div>
+                                <label for="telefone" class="block text-xs font-bold text-texto-apoio my-1">Telefone / WhatsApp</label>
+                                <input type="text" id="telefone" name="telefone" class="campo-input-ativo" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-xs font-bold text-texto-apoio my-1">E-mail</label>
+                                <input type="email" id="email" name="email" class="campo-input-ativo" required>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Bloco 2: Objetivo profissional -->
+                    <fieldset class="my-4">
+                        <div class="flex flex-row items-center gap-2 my-2">
+                            <span class="bg-verde-escuro text-white font-bold px-3 py-1 rounded-full text-xs">2</span>
+                            <strong class="text-texto-escuro">Objetivo profissional</strong>
+                        </div>
+
+                        <div class="flex flex-wrap gap-4 my-2">
+                            <!-- Opção selecionada com borda verde escura e fundo verde claro -->
+                            <label class="bg-white border border-borda-suave text-texto-escuro text-sm py-2 px-4 rounded-xl">
+                                <!-- Aplica a cor verde ao botão de rádio quando marcado - NNão consegui fazer funcionar -->
+                                <input type="radio" name="objetivo" value="aprendiz" class="accent-verde-escuro" checked> Jovem Aprendiz
+                            </label>
+                            <label class="bg-white border border-borda-suave text-texto-escuro text-sm py-2 px-4 rounded-xl">
+                                <input type="radio" name="objetivo" value="estagio" class="accent-verde-escuro"> Estágio Técnico/Superior
+                            </label>
+                            <label class="bg-white border border-borda-suave text-texto-escuro text-sm py-2 px-4 rounded-xl">
+                                <input type="radio" name="objetivo" value="clt" class="accent-verde-escuro"> Primeiro Emprego CLT
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Bloco 3: Formação escolar -->
+                    <fieldset class="my-4">
+                        <div class="flex flex-row items-center gap-2 my-2">
+                            <span class="bg-verde-escuro text-white font-bold px-3 py-1 rounded-full text-xs">3</span>
+                            <strong class="text-texto-escuro">Formação escolar</strong>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-2">
+                            <div>
+                                <label for="instituicao" class= "block text-xs font-bold text-texto-apoio my-1">Instituição</label>
+                                <input type="text" id="instituicao" name="instituicao" class="campo-input-ativo">
+                            </div>
+                            <div>
+                                <label for="serie" class="block text-xs font-bold text-texto-apoio my-1">Ano / Série</label>
+                                <select id="serie" name="serie" class="campo-input-ativo">
+                                    <option selected>Ensino Médio – Matutino</option>
+                                    <option>Ensino Médio – Vespertino</option>
+                                    <option>Ensino Médio – Noturno</option>
+                                    <option>Ensino Superior – Em andamento</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Bloco 4: Competências e habilidades -->
+                    <fieldset class="my-4">
+                        <div class="flex flex-row items-center gap-2 my-2">
+                            <span class="bg-verde-escuro text-white font-bold px-3 py-1 rounded-full text-xs">4</span>
+                            <strong class="text-texto-escuro">Competências e habilidades</strong>
+                        </div>
+
+                        <div class="flex flex-col gap-2 my-2 text-sm">
+                            <label class="flex flex-row items-center gap-1 text-texto-escuro">
+                                <input type="checkbox" name="hab1" class="accent-verde-escuro w-4 h-4" > Informática e Internet Básica
+                            </label>
+                            <label class="flex flex-row items-center gap-1 text-texto-escuro">
+                                <input type="checkbox" name="hab2" class="accent-verde-escuro w-4 h-4"> Trabalho em Equipe
+                            </label>
+                            <label class="flex flex-row items-center gap-1 text-texto-escuro">
+                                <input type="checkbox" name="hab3" class="accent-verde-escuro w-4 h-4" > Comunicação Verbal e Escrita
+                            </label>
+                        </div>
+                    </fieldset>
+                    <!-- Botão Limpar -->
+                    <button type="reset" class="bg-white border border-borda-suave text-texto-apoio hover:bg-fundo-claro font-bold text-sm py-2 px-4 rounded-xl my-2">
+                        Limpar dados
+                    </button>
+                </form>
+            </section>
+
+            <!-- COLUNA DIREITA: visão de impressão-->
+            <aside class="lg:col-span-2 flex flex-col justify-between">
+                <div>
+                    <!-- Topo da Prévia -->
+                    <div class="flex flex-row justify-between items-center my-2">
+                        <h3 class="text-xs font-bold text-texto-apoio tracking-wider">PRÉVIA CURRÍULO</h3>
+                    </div>
+
+                    <!-- Moldura Cinza com a Folha A4 Branca centralizada-->
+                    <div class="bg-moldura-a4 p-8 rounded-lg my-2">
+                        <article class="bg-white p-6 shadow-md mx-auto">
+                            <header class="my-2">
+                                <h2 class="text-lg font-bold text-verde-escuro">NOME COMPLETO</h2>
+                                <p class="text-xs text-texto-apoio my-1">(99) 99999-9999 · Cidade-UF · Email@Email.com</p>
+                                <div class="w-10 h-1 bg-verde-escuro my-2"></div>
+                            </header>
+
+                            <section class="my-4">
+                                <h4 class="text-xs font-bold text-verde-medio border-b border-borda-suave my-1">OBJETIVO PROFISSIONAL</h4>
+                                <p class="text-xs text-texto-escuro my-2">
+                                    Objetivo .......
+                                </p>
+                            </section>
+
+                            <section class="my-4">
+                                <h4 class="text-xs font-bold text-verde-medio border-b border-borda-suave my-1">ESCOLARIDADE</h4>
+                                <p class="text-xs font-bold text-texto-escuro my-1">Ensino .....</p>
+                                <p class="text-xs text-texto-apoio">Escola e período que estuda</p>
+                            </section>
+
+                            <section class="my-4">
+                                <h4 class="text-xs font-bold text-verde-medio border-b border-borda-suave my-1">HABILIDADES E COMPETÊNCIAS</h4>
+                                <!-- list-disc e pl-4 colocam os marcadores de bolinha na lista -->
+                                <ul class="list-disc pl-4 text-xs text-texto-escuro my-2">
+                                    <li>Ex: Informática Básica e Ferramentas Web</li>
+                                    <li>Ex: Trabalho em Equipe e Assiduidade</li>
+                                    <li>Ex: Boa Comunicação e Proatividade</li>
+                                </ul>
+                            </section>
+                        </article>
+                    </div>
+                </div>
+                <!-- Botão inferior-->
+                    <div>
+                        </div><button type="button" class="btn-verde-escuro text-xs">
+                        Imprimir / Salvar PDF
+                    </button>
+                </div>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-verde-escuro text-white p-6 my-4">
+        <div class="container mx-auto flex flex-row justify-between items-center text-sm">
+            <p><strong>UFFS · Ciência da Computação</strong></p>
+            <p><a href="mailto:atendimento@conectaprimeiro.com.br" class="text-verde-claro hover:underline">Canal de Atendimento</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

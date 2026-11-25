@@ -29,8 +29,10 @@
                     <li><a href="index.html" class="text-texto-escuro hover:text-verde-medio font-bold">Início</a></li>
                     <li><a href="curriculo.html" class="text-texto-escuro hover:text-verde-medio font-bold">Currículo</a></li>
                     <li><a href="quiz.html" class="text-texto-escuro hover:text-verde-medio font-bold">Quiz</a></li>
-                    <li><a href="#direitos" class="text-texto-escuro hover:text-verde-medio font-bold">Direitos</a></li>
-                    <li><a href="#sobre" class="text-texto-escuro hover:text-verde-medio font-bold">Sobre</a></li>
+                    <!--
+                    Fazer no final
+                    <li><a href="#direitos" class="text-texto-escuro hover:text-verde-medio font-bold">Direitos</a></li> 
+                    <li><a href="#sobre" class="text-texto-escuro hover:text-verde-medio font-bold">Sobre</a></li>-->
                 </ul>
             </nav>
         </div>
@@ -72,7 +74,7 @@
                 
                 <!-- Card 1 -->
                 <article class="card-padrao flex flex-row items-start gap-4">
-                    <!-- shrink-0 impede que o círculo do ícone encolha no Flexbox -->
+                    <!-- shrink-0 impede que o círculo do ícone encolha no Flexbox (Lembrar do site salvo como favorito, tem como fazer) -->
                     <div class="bg-verde-claro text-verde-escuro font-bold p-4 rounded-full text-center shrink-0">
                         pdf
                     </div>
@@ -82,12 +84,71 @@
                         <a href="curriculo.html" class="text-sm text-verde-medio font-bold hover:underline">Acessar →</a>
                     </div>
                 </article>
+            <!-- Card 2: Quiz de Elegibilidade -->
+                <article class="card-padrao flex flex-row items-start gap-4">
+                    <div class="bg-verde-claro text-verde-escuro font-bold p-4 px-6 rounded-full text-center shrink-0">
+                        ?
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-texto-escuro">Quiz de Elegibilidade</h4>
+                        <p class="text-sm text-texto-apoio my-4">Saiba se voce é Aprendiz, Estagiário ou CLT formal.</p>
+                        <a href="quiz.html" class="text-sm text-verde-medio font-bold hover:underline">Acessar →</a>
+                    </div>
+                </article>
+
+                <!-- Card 3: Direitos -->
+                <article class="card-padrao flex flex-row items-start gap-4">
+                    <div class="bg-verde-claro text-verde-escuro font-bold p-4 px-6 rounded-full text-center shrink-0">
+                        §
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-texto-escuro">Direitos</h4>
+                        <p class="text-sm text-texto-apoio my-4">Conheça as leis, férias e conduta no trabalho.</p>
+                        <a href="quiz.html" class="text-sm text-verde-medio font-bold hover:underline">Acessar →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO DESTAQUE EDUCATIVO -->
+        <section id="sobre" class="my-4">
+            <h3 class="text-xs font-bold text-texto-apoio tracking-wider my-4">DESTAQUE EDUCATIVO · BOAS PRÁTICAS NO PRIMEIRO EMPREGO</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-4">
+                
+                <!-- Card 01 -->
+                <article class="card-padrao flex flex-row items-center gap-4">
+                    <span class="text-2xl font-bold text-verde-medio">01</span>
+                    <div>
+                        <h4 class="font-bold text-verde-escuro">Postura e Ética</h4>
+                        <p class="text-sm text-texto-escuro">Respeito, sigilo e responsabilidade.</p>
+                    </div>
+                </article>
+
+                <!-- Card 02 -->
+                <article class="card-padrao flex flex-row items-center gap-4">
+                    <span class="text-2xl font-bold text-verde-medio">02</span>
+                    <div>
+                        <h4 class="font-bold text-verde-escuro">Comunicação Clara</h4>
+                        <p class="text-sm text-texto-escuro">Escute, pergunte e confirme o combinado.</p>
+                    </div>
+                </article>
+
+                <!-- Card 03 -->
+                <article class="card-padrao flex flex-row items-center gap-4">
+                    <span class="text-2xl font-bold text-verde-medio">03</span>
+                    <div>
+                        <h4 class="font-bold text-verde-escuro">Pontualidade</h4>
+                        <p class="text-sm text-texto-escuro">Chegue no horário e avise imprevistos.</p>
+                    </div>
+                </article>
             </div>
         </section>
 
     </div>
 
-    <!-- RODAPÉ VERDE ESCURO -->
+    <!-- RODAPÉ VERDE -->
     <footer class="bg-verde-escuro text-white p-6">
         <div class="container mx-auto flex flex-row justify-between items-center text-sm">
             <p><strong>UFFS · Ciência da Computação</strong></p>
