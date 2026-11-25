@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Primeiro - Quiz Legal</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="bg-white text-texto-escuro">
+
+    <!-- CABEÇALHO ---->
+    <header class="bg-white border-b border-borda-suave p-4">
+        <div class="container mx-auto flex flex-row justify-between items-center">
+            <div class="flex flex-row items-center gap-4">
+                <div class="bg-verde-escuro text-white font-bold p-2 px-4 rounded-xl text-xl">
+                    C
+                </div>
+                <div>
+                    <h1 class="font-bold text-xl text-verde-escuro">Conecta Primeiro</h1>
+                    <p class="text-sm text-texto-apoio">Seu primeiro passo para o trabalho</p>
+                </div>
+            </div>
+
+            <nav>
+                <a href="index.html" class="bg-white border border-borda-suave text-verde-escuro hover:bg-verde-claro font-bold text-sm py-2 px-4 rounded-lg">
+                    ← Voltar ao Início
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="container mx-auto my-4 p-4">
+
+        <!-- TÍTULO E BARRA DE PROGRESSO DO QUIZ ---->
+        <section class="my-4">
+            <span class="text-xs font-bold text-texto-escuro tracking-wider">
+                QUIZ LEGAL
+            </span>
+            <h2 class="text-3xl font-bold text-texto-escuro my-2">Quiz de Enquadramento Contratual Legal</h2>
+            
+            <!-- Linha da Barra de Progresso -->
+            <div class="flex flex-row items-center justify-between gap-4 my-4">
+                <span class="text-sm text-texto-apoio shrink-0">Etapa 1 de 5</span>
+                
+                <!-- Barra dividida em 5 partes, 3 verdes concluídas + 2 cinzas restantes usando Grid----->
+                <div class="grid grid-cols-5 w-full bg-borda-suave h-3 rounded-full overflow-hidden">
+                    <div class="col-span-3 bg-verde-medio"></div>
+                </div>
+                
+                <span class="text-sm font-bold text-verde-escuro shrink-0">--% concluído</span>
+            </div>
+        </section>
+
+        <!-- LAYOUT DE 2 COLUNAS DO QUIZ -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 my-4">
+
+            <!-- COLUNA ESQUERDA, Ocupa 2 colunas: lg:col-span-2) -->
+            <section class="lg:col-span-2 card-padrao flex flex-col justify-between">
+                
+                <form>
+                    <!-- PERGUNTA 3 DE 5 EM DESTAQUE -->
+                    <fieldset class="my-2">
+                        <span class="text-xs font-bold text-texto-apoio tracking-wider">PERGUNTA 1 DE 5</span>
+                        <h3 class="text-xl font-bold text-texto-escuro my-2">
+                            Qual é a sua faixa etária e a sua condição de matrícula escolar no momento?
+                        </h3>
+
+                        <!-- Opções A, B e C -->
+                        <div class="flex flex-col gap-4 my-4">
+                            
+                            <!-- Opção A -->
+                            <label class="flex flex-row items-center gap-4 bg-white border border-borda-suave p-4 rounded-xl hover:bg-fundo-claro">
+                                <input type="radio" name="q3" value="A" class="accent-verde-escuro w-4 h-4" checked>
+                                <span class="bg-fundo-claro text-texto-apoio font-bold py-1 px-3 rounded-full text-sm">A</span>
+                                <span class="text-texto-escuro text-sm">
+                                    Tenho entre 14 e 24 anos e estou matriculado no Ensino Fundamental ou Médio.
+                                </span>
+                            </label>
+
+                            <!-- Opção B --->
+                            <label class="flex flex-row items-center gap-4 bg-white border border-borda-suave p-4 rounded-xl hover:bg-fundo-claro">
+                                <input type="radio" name="q3" value="B" class="accent-verde-escuro w-4 h-4">
+                                <span class="bg-fundo-claro text-texto-apoio font-bold py-1 px-3 rounded-full text-sm">B</span>
+                                <span class="text-texto-escuro text-sm">
+                                    Tenho mais de 16 anos e estou regularmente matriculado no Ensino Superior/Técnico.
+                                </span>
+                            </label>
+
+                            <!-- Opção C -->
+                            <label class="flex flex-row items-center gap-4 bg-white border border-borda-suave p-4 rounded-xl hover:bg-fundo-claro">
+                                <input type="radio" name="q3" value="C" class="accent-verde-escuro w-4 h-4">
+                                <span class="bg-fundo-claro text-texto-apoio font-bold py-1 px-3 rounded-full text-sm">C</span>
+                                <span class="text-texto-escuro text-sm">
+                                    Tenho 18 anos ou mais e já concluí o Ensino Médio (fora da escola).
+                                </span>
+                            </label>
+
+                        </div>
+
+                        <!-- Botões Inferiores do Card da Pergunta -->
+                        <div class="flex flex-row justify-between items-center my-4">
+                            <button type="submit" class="btn-verde-escuro text-sm">
+                                Confirmar resposta →
+                            </button>
+                        </div>
+                    </fieldset>
+
+                    <hr class="border-borda-suave my-6">
+
+                    <!-- DEMAIS PERGUNTAS ---->
+                    <div id="todas-perguntas" class="my-4">
+                        <h4 class="text-xs font-bold text-texto-apoio tracking-wider my-2">DEMAIS PERGUNTAS DO QUIZ (ETAPAS 1, 2, 4 E 5)</h4>
+
+                        <!-- Pergunta 1 -->
+                        <fieldset class="bg-fundo-claro p-4 rounded-xl border border-borda-suave my-2 text-sm">
+                            <p class="font-bold text-verde-escuro">1. Qual é a sua disponibilidade de horário diário para trabalhar?</p>
+                            <label class="block my-1"><input type="radio" name="q1" class="accent-verde-escuro" checked> A) Até 6 horas diárias (meio período).</label>
+                            <label class="block my-1"><input type="radio" name="q1" class="accent-verde-escuro"> B) Até 8 horas diárias (período integral).</label>
+                        </fieldset>
+
+                        <!-- Pergunta 2 -->
+                        <fieldset class="bg-fundo-claro p-4 rounded-xl border border-borda-suave my-2 text-sm">
+                            <p class="font-bold text-verde-escuro">2. Você já possui Carteira de Trabalho Digital (CTPS)?</p>
+                            <label class="block my-1"><input type="radio" name="q2" class="accent-verde-escuro" checked> A) Sim, já tenho o aplicativo ativado.</label>
+                            <label class="block my-1"><input type="radio" name="q2" class="accent-verde-escuro"> B) Ainda não emti minha carteira digital.</label>
+                        </fieldset>
+
+                        <!-- Pergunta 4 -->
+                        <fieldset class="bg-fundo-claro p-4 rounded-xl border border-borda-suave my-2 text-sm">
+                            <p class="font-bold text-verde-escuro">4. Qual é o seu principal objetivo nesta primeira experiência profissional?</p>
+                            <label class="block my-1"><input type="radio" name="q4" class="accent-verde-escuro" checked> A) Formação técnico-profissional metódica (teoria e prática).</label>
+                            <label class="block my-1"><input type="radio" name="q4" class="accent-verde-escuro"> B) Estágio supervisionado vinculado ao curso técnico/superior.</label>
+                        </fieldset>
+
+                        <!-- Pergunta 5 --->
+                        <fieldset class="bg-fundo-claro p-4 rounded-xl border border-borda-suave my-2 text-sm">
+                            <p class="font-bold text-verde-escuro">5. Como você pretende conciliar os estudos com a rotina de trabalho?</p>
+                            <label class="block my-1"><input type="radio" name="q5" class="accent-verde-escuro" checked> A) Estudar no período da manhã e trabalhar à tarde.</label>
+                            <label class="block my-1"><input type="radio" name="q5" class="accent-verde-escuro"> B) Trabalhar durante o dia e estudar no período noturno.</label>
+                        </fieldset>
+                    </div>
+                </form>
+
+            </section>
+
+            <!---CARD VERDE ESCURO----->
+            <aside class="bg-verde-escuro text-white rounded-xl p-6">
+                <h3 class="text-xs font-bold text-verde-claro tracking-wider my-2">Direitos</h3>
+                <p class="text-sm text-verde-claro my-1">Modalidade indicada</p>
+                <h4 class="text-2xl font-bold text-white my-2">Contrato de Aprendizagem</h4>
+
+                <!-- Campo Amarelo com a Lei- -->
+                <span class="inline-block bg-amarelo-destaque text-texto-escuro text-xs font-bold py-2 px-4 rounded-full my-2">
+                    Lei Federal nº 10.097/2000
+                </span>
+
+                <hr class="border-verde-medio my-4">
+
+                <!-- Lista de Direitos e Requisitos --->
+                <div class="flex flex-col gap-6 my-4">
+                    
+                    <article class="flex flex-row items-start gap-4">
+                        <div>
+                            <h5 class="font-bold text-white text-sm">Jornada máxima</h5>
+                            <p class="text-xs text-verde-claro my-1">
+                                6 horas diárias para quem não concluiu o Ensino Fundamental/Médio.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="flex flex-row items-start gap-4">
+                        <div>
+                            <h5 class="font-bold text-white text-sm">Direitos assegurados</h5>
+                            <p class="text-xs text-verde-claro my-1">
+                                Carteira de Trabalho assinada, salário-mínimo/hora e FGTS.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-row items-start gap-4">
+                        <div>
+                            <h5 class="font-bold text-white text-sm">Requisito fundamental</h5>
+                            <p class="text-xs text-verde-claro my-1">
+                                Manter frequência escolar ativa e aproveitamento regular.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- RODAPÉ ---->
+    <footer class="bg-verde-escuro text-white p-6 my-4">
+        <div class="container mx-auto flex flex-row justify-between items-center text-sm">
+            <p><strong>UFFS - Ciência da Computação</strong></p>
+            <p><a href="mailto:atendimento@conectaprimeiro.com.br" class="text-verde-claro hover:underline">Canal de Atendimento</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
